@@ -1,0 +1,53 @@
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    font-size: 60px;
+    text-transform: capitalize;
+    font-style: italic;
+    text-align: center;
+}
+
+#albums li {
+    list-style: none;
+    font-size: 18px;
+    color: blueviolet;
+    font-weight: 800;
+    max-width: 710px;
+}
+
+#albums li:first-letter {
+    text-transform: capitalize;
+    color: black;
+}
+
+#albums button{
+    width: 100px;
+    height: 10px;
+    background-color: #f33d3d;
+    border:2px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20%;
+    margin: 0 0 20px 540px;
+    padding: 5px 10px 20px;
+}
+#albums button:active{
+    color:#f33d3d;
+    background-color: aliceblue;
+}
+#albums button:hover{
+    color:aquamarine;
+    background-color: rgb(25, 135, 231);
+    border: 2px solid rgb(68, 6, 167);
+}
+
+
+.active{
+    background-color: rgb(235, 255, 81);
+}
