@@ -29,11 +29,9 @@ fetch(url)
             
      .catch((error) => console.log(error))
     })
-    
 
-    const ulNode = document.querySelector("ul");
 
-    ulNode.addEventListener("click", (event) => {
+    ul.addEventListener("click", (event) => {
 
         const isRemoveButton = event.target.className === "remove-button";
 
