@@ -25,33 +25,21 @@ fetch(url)
             li.appendChild(button);
             button.innerHTML = "Delete";
             button.classList.add("remove-button");
-
-
-            const ulNode = document.querySelector("ul");
-
-            ulNode.addEventListener("click", (event) => {
-
-                const isRemoveButton = event.target.className === "remove-button";
-
-                if (isRemoveButton) {
-                    const removeButton = event.target;
-                    const album_title = removeButton.closest(".album_title");
-                    album_title.remove();
-                }
-            })
-            
-
-            const listNode = document.querySelector("ul");
-            
-            listNode.onclick = (event) => {
-            const node = event.target;
-
-            if (node.nodeName === "LI") {
-                node.classList.toggle("active");
-            }
-            };
-
         })
             
      .catch((error) => console.log(error))
+    })
+    
+
+    const ulNode = document.querySelector("ul");
+
+    ulNode.addEventListener("click", (event) => {
+
+        const isRemoveButton = event.target.className === "remove-button";
+
+        if (isRemoveButton) {
+            const removeButton = event.target;
+            const albumTitle = removeButton.closest(".album_title");
+            albumTitle.remove();
+        }
     })
